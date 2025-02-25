@@ -69,76 +69,76 @@
   background: rgba(255, 255, 255, 0.3);
   border-radius: 8px;
 }
-  
-  /* ====== Sección de Propósito ========================== */
-  .purpose-box {
-    max-width: 800px;
-    margin: 0 auto;
-    background-color: #F5D1C8; /* Fondo suave */
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: left;
-    font-size: 1.2rem;
-  }
-  
-  .purpose-box ul {
-    margin-top: 1rem;
-    padding-left: 1.5rem;
-  }
-  
-  .purpose-box li {
-    margin-bottom: 1rem;
-  }
-  
-  /* ====== Sección de Testimonios ====== */
-  .testimonials-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  .testimonial {
-    background-color: #F5BFB8;
-    padding: 1.5rem;
-    width: 80%;
-    max-width: 500px;
-    border-radius: 10px;
-    color: #333;
-    font-size: 1.2rem;
-    text-align: left;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    position: relative;
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .testimonial span {
-    display: block;
-    font-size: 1rem;
-    font-style: italic;
-    margin-top: 1rem;
-    text-align: right;
-  }
-  
-  /* Alternar posiciones */
-  .testimonial:nth-child(odd) {
-    align-self: flex-start;
-    margin-left: 10%;
-  }
-  
-  .testimonial:nth-child(even) {
-    align-self: flex-end;
-    margin-right: 10%;
-  }
-  
-  /* Efecto hover */
-  .testimonial:hover {
-    transform: scale(1.05);
-  }
-  
+
+/* ====== Sección de Propósito ========================== */
+.purpose-box {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #f5d1c8; /* Fondo suave */
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  font-size: 1.2rem;
+}
+
+.purpose-box ul {
+  margin-top: 1rem;
+  padding-left: 1.5rem;
+}
+
+.purpose-box li {
+  margin-bottom: 1rem;
+}
+
+/* ====== Sección de Testimonios ====== */
+.testimonials-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.testimonial {
+  background-color: #f5bfb8;
+  padding: 1.5rem;
+  width: 80%;
+  max-width: 500px;
+  border-radius: 10px;
+  color: #333;
+  font-size: 1.2rem;
+  text-align: left;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+}
+
+.testimonial span {
+  display: block;
+  font-size: 1rem;
+  font-style: italic;
+  margin-top: 1rem;
+  text-align: right;
+}
+
+/* Alternar posiciones */
+.testimonial:nth-child(odd) {
+  align-self: flex-start;
+  margin-left: 10%;
+}
+
+.testimonial:nth-child(even) {
+  align-self: flex-end;
+  margin-right: 10%;
+}
+
+/* Efecto hover */
+.testimonial:hover {
+  transform: scale(1.05);
+}
+
 /* Sección Certificaciones =====================================*/
 .certifications-detail {
   cursor: pointer;
@@ -243,54 +243,51 @@
   padding-left: 1.5rem;
 }
 
+/* ====== Responsive ====== */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
 
-  
-  /* ====== Responsive ====== */
-  @media (max-width: 768px) {
-    .section-title {
-      font-size: 2rem;
-    }
-  
-    .purpose-box {
-      padding: 1.5rem;
-    }
-  
-    .testimonial {
-      width: 90%;
-      text-align: center;
-    }
-  
-    .testimonial:nth-child(odd),
-    .testimonial:nth-child(even) {
-      align-self: center;
-      margin-left: 0;
-      margin-right: 0;
-    }
+  .purpose-box {
+    padding: 1.5rem;
+  }
 
-    .certifications-grid {
-      grid-template-columns: 1fr;
+  .testimonial {
+    width: 90%;
+    text-align: center;
+  }
+
+  .testimonial:nth-child(odd),
+  .testimonial:nth-child(even) {
+    align-self: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .certifications-grid {
+    grid-template-columns: 1fr;
   }
 
   .intro-box {
-      padding: 2rem 1rem;
+    padding: 2rem 1rem;
   }
 
   .decorative-clip {
-      width: 60px;
-      top: -20px;
+    width: 60px;
+    top: -20px;
   }
 
-    .certifications-grid {
-      grid-template-columns: 1fr;
+  .certifications-grid {
+    grid-template-columns: 1fr;
   }
 
   .intro-box {
-      padding: 2rem 1rem;
+    padding: 2rem 1rem;
   }
 
   .decorative-clip {
-      width: 60px;
-      top: -20px;
+    width: 60px;
+    top: -20px;
   }
-  }
-  
+}

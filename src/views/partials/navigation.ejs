@@ -54,5 +54,37 @@
       </ul>
     </div>
   </div>
+
+  <!-- script para ocultar la barra de nav al hacer scroll-->
+  <script>
+    (function () {
+      let lastScroll = 0;
+      const navbar = document.querySelector(".navbar");
+      let ticking = false;
+
+      function updateNavbar(scrollPos) {
+        if (scrollPos <= 100) {
+          navbar.classList.remove("navbar-hidden");
+          return;
+        }
+
+        if (scrollPos > lastScroll) {
+          navbar.classList.add("navbar-hidden");
+        } else {
+          navbar.classList.remove("navbar-hidden");
+        }
+        lastScroll = scrollPos;
+      }
+
+      window.addEventListener("scroll", function () {
+        if (!ticking) {
+          window.requestAnimationFrame(function () {
+            updateNavbar(window.pageYOffset);
+            ticking = false;
+          });
+          ticking = true;
+        }
+      });
+    })();
+  </script>
 </nav>
-<hr />
