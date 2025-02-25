@@ -1,307 +1,399 @@
-/* index.css */
+:root {
+  --cta-color: #25d366;
+  --area-hover: #ff6f611a;
+}
 
-/* Sección "about-Erika" */
-.about-Erika {
-    background-color: #F5BFB8;
-    padding: 2rem;
-    margin: 7rem 3rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+/* Sección 1: CTA */
+.main-cta {
+  position: relative;
+  padding: 6rem 1rem 4rem;
+  text-align: center;
+}
+
+.cta-container {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.cta-image-link {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+}
+
+.cta-image {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.hover-effect:hover {
+  transform: scale(1.03) rotate(-1deg);
+  filter: brightness(1.05);
+}
+
+/* Sección 2: Presentación =====================*/
+.presentation-section {
+  background: var(--fourth-color);
+  padding: 6rem 2rem;
+  position: relative;
+  margin-top: 2.5rem;
+}
+
+.presentation-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 3rem;
+  position: relative;
+}
+
+.presentation-clips {
+  position: absolute;
+  width: 100%;
+  top: -154px;
+}
+
+.top-clip {
+  position: absolute;
+  width: 80px;
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+.left-clip {
+  left: 10%;
+}
+
+.right-clip {
+  right: 10%;
+}
+
+.profile-frame {
+  border: 8px solid var(--primary-color);
+  border-radius: 25px 0 25px 0;
+  overflow: hidden;
+  box-shadow: 12px 12px 0 var(--secondary-color);
+  position: relative;
+  z-index: 1;
+}
+
+.profile-image {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.presentation-text {
+  padding: 2rem;
+  position: relative;
+}
+
+.animated-text {
+  font-family: var(--font-kaushan);
+  color: var(--tertiary-color);
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  display: inline-block;
+  animation: textFloat 3s ease-in-out infinite;
+}
+
+.professional-details p {
+  font-size: 1.2rem;
+  font-family: var(--font-kaushan);
+  margin: 0.8rem 0;
+  padding: 1rem;
+  background: linear-gradient(
+    to right,
+    transparent 90%,
+    var(--primary-color) 10%
+  );
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.professional-details p:hover {
+  transform: translateX(10px);
+  background: linear-gradient(
+    to right,
+    transparent 70%,
+    var(--tertiary-color) 30%
+  );
+}
+
+@keyframes textFloat {
+  0%,
+  100% {
+    transform: translateY(0) rotate(-2deg);
   }
-  
-  .clip-Erika {
-    position: absolute;
+  50% {
+    transform: translateY(-8px) rotate(2deg);
   }
-  .clip-Erika img {
-    width: 70px;
-    height: 70px;
-    position: absolute;
-    transform: translate(-50%, -215%);
-  }
-  .clip-Erika-left {
-    left: 9rem;
-  }
-  .clip-Erika-right {
-    right: 9rem;
-  }
-  
-  .about-title {
-    font-family: Kaushan Script, cursive;
-    font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 1rem;
-  }
-  
-  .about-content {
-    display: flex;
-    gap: 2rem;
-    align-items: flex-start;
-  }
-  
-  .about-image img {
-    max-width: 17rem;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .about-text {
-    background-color: #eea298f5;
-    padding: 1.5rem;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    align-self: center;
-  }
-  .about-text p {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #333;
-    margin-bottom: 1rem;
-  }
-  
-  /* Sección "objetives" */
-  .objetives {
-    background-color: #F5BFB8;
-    padding: 2rem;
-    margin: 2rem 0;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  .content-objetives {
-    display: flex;
-    justify-content: space-between;
-  }
-  .title-objetives {
-    font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 1rem;
-  }
-  .objetives-image {
-    padding-right: 2rem;
-  }
-  .objetives-image img {
-    width: 350px;
-    height: 2.5rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Sección "pics" */
-  .pics {
-    display: flex;
-    padding: 1rem 2rem;
-    gap: 2rem;
-    justify-content: space-between;
-  }
-  .pics .pic {
-    flex: 1 1 410px;
-  }
-  .pics img {
-    width: 100%;
-    max-width: 27rem;
-    height: auto;
-    border-radius: 10%;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Sección "container-objetives" y "card" */
-  .container-objetives {
-    max-width: 800px;
-    padding: 20px;
-  }
-  h3 {
-    text-align: center;
-    font-size: 2em;
-    margin-bottom: 20px;
-  }
-  .card {
-    background-color: #ffe6e6;
-    border-radius: 10px;
-    padding: 30px;
-    margin: 50px;
-    position: relative;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  .objectives-psic {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
-  .objective {
-    text-align: center;
-    max-width: 200px;
-    margin: 10px;
-  }
-  .icon {
-    background-color: #ffc0cb;
-    border-radius: 50%;
-    width: 80px;
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto 15px;
-  }
-  .icon img {
-    width: 50px;
-    height: 50px;
-  }
-  .text {
-    font-size: 0.9em;
-    font-weight: bold;
-  }
-  
-  /* Clips dentro de card */
-  .clip {
-    position: absolute;
-    top: 50%;
-  }
-  .clip img {
-    width: 70px;
-    height: 70px;
-    position: absolute;
-    transform: translate(-50%, -50%);
-  }
-  .clip-left {
-    left: -20px;
-  }
+}
+
+/* Sección 3: Objetivos ============================*/
+.objectives-section {
+  background: var(--secondary-color);
+  padding: 4rem 1rem;
+}
+
+.objectives-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--text-color);
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.objectives-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.objective-card {
+  border-radius: 20px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  box-shadow: var(--shadow);
+  aspect-ratio: 1;
+}
+
+.objective-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.objective-card:hover {
+  transform: translateY(-10px);
+}
+
+.objective-card:hover .objective-image {
+  transform: scale(1.05);
+}
+
+/* Sección 4: Beneficios ==============================*/
+.benefits-section {
+  position: relative;
+  padding: 2rem 2rem;
+  background: var(--fourth-color);
+  margin: 5rem 5rem;
+}
+
+.benefits-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.vertical-clips {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  pointer-events: none;
+}
+
+.vertical-clips img {
+  width: 60px;
+  height: auto;
+}
+
+.clip-left {
+  margin-left: -80px;
+  transform: rotate(270deg);
+}
+
+.clip-right {
+  margin-right: -80px;
+  transform: rotate(90deg);
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.benefit-card {
+  background: var(--primary-color);
+  padding: 2rem;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow);
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.benefit-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+.benefit-content {
+  text-align: center;
+}
+
+.benefit-content h3 {
+  color: var(--tertiary-color);
+  font-family: var(--font-kaushan);
+  font-size: 1.8rem;
+}
+
+.benefit-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.benefit-card:hover .benefit-icon {
+  transform: scale(1.2);
+}
+
+/* Sección 5: Áreas de Atención =====================*/
+/* Áreas de Atención */
+.areas-section {
+  padding: 4rem 2rem;
+  background: var(--back-color);
+}
+
+.areas-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.area-card {
+  background: var(--primary-color);
+  padding: 2rem;
+  border-radius: 15px;
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.area-card::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    45deg,
+    transparent,
+    var(--fourth-color) 50%,
+    transparent
+  );
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.area-card:hover::before {
+  opacity: 0.1;
+}
+
+.area-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.area-card:hover .area-icon {
+  transform: rotate(15deg) scale(1.2);
+}
+
+.area-card h3 {
+  color: var(--tertiary-color);
+  margin: 1rem 0;
+  font-size: 1.3rem;
+}
+
+.area-card p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--text-color);
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  /* Sección 1: CTA */
+  .clip-left,
   .clip-right {
-    right: -20px;
+    width: 60px;
+    top: -25px;
   }
-  
-  /* Sección "beneficios" */
-  .container-benefits {
-    max-width: 800px;
-    margin: 0 auto;
-    background-color: white;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+  /* Sección 2: Presentación */
+  .presentation-container {
+    grid-template-columns: 1fr;
   }
-  .title-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 20px;
+
+  .profile-image {
+    height: 400px;
   }
-  .title {
-    background-color: #FFB6C1;
-    padding: 10px 20px;
-    font-size: 24px;
-    font-weight: bold;
-    text-transform: uppercase;
+
+  .top-clip {
+    width: 60px;
   }
-  .curl {
-    font-size: 24px;
-    color: #888;
-    margin: 0 10px;
+
+  .presentation-clips {
+    top: -140px;
   }
-  .benefits {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+
+  .objectives-grid,
+  .areas-grid {
+    grid-template-columns: 1fr;
   }
-  .benefit {
-    display: flex;
-    align-items: flex-start;
+
+  /* Sección 3: Objetivos */
+  .objectives-grid {
+    padding: 0 4rem;
   }
-  .icon-benefit {
-    background-color: #FFE4E1;
-    border: 2px dashed #FFB6C1;
-    border-radius: 10px;
-    padding: 10px;
-    margin-right: 15px;
-    width: 50px;
-    height: 50px;
+
+  /* Sección 4: Beneficios */
+  .objectives-grid {
+    grid-template-columns: 1fr;
   }
-  .icon-benefit svg {
-    width: 100%;
-    height: 100%;
+
+  .benefits-grid {
+    grid-template-columns: 1fr;
   }
-  .text h3 {
-    margin: 0 0 5px 0;
+
+  .vertical-clips {
+    display: none;
   }
-  .text p {
-    margin: 0;
-    font-size: 14px;
+
+  /* Sección 5: Áreas de Atención */
+  .areas-grid {
+    grid-template-columns: 1fr;
   }
-  
-  /* Sección "áreas de atención" */
-  .container-atention {
-    max-width: 1000px;
-    margin: 0 auto;
+
+  .area-card {
+    padding: 1.5rem;
   }
-  .container-atention h2 {
-    text-align: center;
-    font-size: 2.5em;
-    margin-bottom: 30px;
-    color: #333;
-    position: relative;
-  }
-  .container-atention h2::after {
-    content: '';
-    display: block;
-    width: 200px;
-    height: 2px;
-    background-color: #333;
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  .areas {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-  }
-  .area {
-    background-color: white;
-    border: 2px solid #ccc;
-    border-radius: 10px;
-    padding: 20px;
-    text-align: center;
-    position: relative;
-  }
-  .area::before {
-    content: '';
-    position: absolute;
-    top: -10px;
-    left: 20px;
-    width: 40px;
-    height: 20px;
-    background-color: #ffb6c1;
-    border-radius: 0 0 20px 20px;
-  }
-  .icon {
-    font-size: 3em;
-    margin-bottom: 10px;
-  }
-  .area h2 {
-    font-size: 1.2em;
-    margin-bottom: 0;
-    color: #333;
-  }
-  
-  /* Media queries ESPECÍFICAS de esta página */
-  @media (max-width: 768px) {
-    .about-content {
-      flex-direction: column;
-    }
-    .about-image {
-      text-align: center;
-      align-self: center;
-    }
-    .about-image img {
-      max-width: 100%;
-      height: auto;
-    }
-    .objetives-image img {
-      display: none;
-    }
-    .pics {
-      flex-direction: column;
-      text-align: center;
-      gap: 1rem;
-    }
-  }
-  
+}

@@ -1,176 +1,219 @@
-<% const pageTitle = "PsicErika - Inicio"; %>
-<%- include ('partials/layout', { title: pageTitle, 
-body: `
-<section class="about-Erika">
-        
-    <h2 class="about-title">Erika<span class="heart"> ♥</span></h2>
-    <div class="about-content">
-        <div class="clip-Erika clip-Erika-left">
-            <img src="./img/clip_2.png" alt="clip-left">
-        </div>
-        <div class="clip-Erika clip-Erika-right">
-            <img src="./img/clip_2.png" alt="clip-right">
-        </div>
-
-      <div class="about-image">
-        <img src="https://picsum.photos/400/600" alt="Erika Guillen" >
-      </div>
-      <div class="about-text">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis beatae numquam repellat amet non totam eum eveniet tenetur praesentium, earum excepturi accusantium esse pariatur ea nemo voluptatibus nulla obcaecati veniam. Sint similique rerum odit, soluta quaerat est quis? Pariatur dolore doloremque sequi! Placeat distinctio magni nulla incidunt iusto error cum!</p>
-        
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique autem est provident dignissimos perspiciatis ullam accusamus vel obcaecati mollitia eum beatae aliquid voluptatibus nihil ipsam sed voluptates rem, error minima!</p>
-        
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-      </div>
-    </div>
+<%- include('partials/layout', { title: 'Inicio - PsicErika', pageCSS:
+'css/index.css', body: `
+<!--Sección 1: Reserta tu cita!!-->
+<section class="main-cta">
+  <div class="cta-container">
+    <a
+      href="https://wa.me/525583812546?text=Hola,%20quisiera%20agendar%20una%20cita%20contigo."
+      class="cta-image-link"
+      target="_blank"
+      aria-label="Agendar cita por WhatsApp"
+    >
+      <img
+        src="https://picsum.photos/800/200"
+        alt="Agendar cita"
+        class="cta-image hover-effect"
+      />
+    </a>
+  </div>
 </section>
 
-<section class="objetives"> 
-  <div class="content-objetives">
-    <div>
-      <h2 class="title-objetives">psicErika</h2>
+<!-- Sección 2: Presentación-->
+<section class="presentation-section">
+  <div class="presentation-container">
+    <!-- Clips superiores -->
+    <div class="presentation-clips">
+      <img
+        src="./img/clip_2.png"
+        class="top-clip left-clip"
+        alt="Pinza superior izquierda"
+      />
+      <img
+        src="./img/clip_2.png"
+        class="top-clip right-clip"
+        alt="Pinza superior derecha"
+      />
     </div>
-    <div class="objetives-image">
-      <img src="https://picsum.photos/100/100" alt="PsicEricka" width="400" height="500">
+
+    <!-- Contenido -->
+    <div class="profile-frame">
+      <img
+        src="https://picsum.photos/200/300"
+        alt="Psicóloga Erika"
+        class="profile-image"
+      />
+    </div>
+
+    <div class="presentation-text">
+      <h2 class="animated-text">Hola, soy Erika</h2>
+      <div class="professional-details">
+        <p>📚 Psicóloga Clínica Certificada</p>
+        <hr />
+        <p>💖 +5 años ayudando a mis pacientes</p>
+        <hr />
+        <p>🔐 Terapias 100% confidenciales</p>
+        <hr />
+        <p>🌐 Especialista en terapia online</p>
+        <hr />
+      </div>
     </div>
   </div>
-
-  <div class="pics">
-    <div class="pic">
-      <img src="https://picsum.photos/200/200" alt="PsicEricka">
-    </div>
-    <div class="pic">
-      <img src="https://picsum.photos/200/200" alt="PsicEricka">
-    </div>
-    <div class="pic">
-      <img src="https://picsum.photos/200/200" alt="PsicEricka">
-    </div>
-  </div>
-
-  <div class="container-objetives"></div>
-    <h3>OBJETIVOS DE PSICONFORT</h3>
-    <div class="card">
-        <div class="clip clip-left">
-          <img src="./img/clip_2_left.png" alt="clip-left">
-        </div>
-        <div class="clip clip-right">
-          <img src="./img/clip_2_right.png" alt="clip-right">
-        </div>
-        <div class="objectives-psic">
-            <div class="objective">
-                <div class="icon">
-                    <img src="https://picsum.photos/100/100" alt="Globe icon">
-                </div>
-                <p class="text">FOMENTAR LA CULTURA PSICOLÓGICA A LO LARGO DEL MUNDO</p>
-            </div>
-            <div class="objective">
-                <div class="icon">
-                    <img src="https://picsum.photos/100/100" alt="Clock icon">
-                </div>
-                <p class="text">PROPORCIONAR UN ESPACIO DE CONFORT Y REFLEXIÓN DISPONIBLE 24/7</p>
-            </div>
-            <div class="objective">
-                <div class="icon">
-                    <img src="https://picsum.photos/100/100" alt="Thumbs up icon">
-                </div>
-                <p class="text">CREAR UNA COMUNIDAD POSITIVA Y COMPROMETIDA CON EL BIENESTAR EMOCIONAL</p>
-            </div>
-        </div>
-    </div>
-</div>
 </section>
 
-<section>
-  <div class="container-benefits">
-    <div class="title-container">
-        <span class="curl">&#10086;&#10086;&#10086;</span>
-        <h2 class="title">Beneficios de la terapia online</h2>
-        <span class="curl">&#10086;&#10086;&#10086;</span>
+<!-- Sección 3: Objetives-->
+<section class="objectives-section">
+  <div class="objectives-container">
+    <h2 class="section-title">Nuestros Objetivos</h2>
+    <div class="objectives-grid">
+      <a
+        href="https://www.instagram.com/p/ejemplo1"
+        class="objective-card"
+        target="_blank"
+        aria-label="Ver publicación en Instagram"
+      >
+        <img
+          src="https://picsum.photos/200/200"
+          alt="Objetivo 1"
+          class="objective-image"
+        />
+      </a>
+      <a
+        href="https://www.instagram.com/p/ejemplo2"
+        class="objective-card"
+        target="_blank"
+        aria-label="Ver publicación en Instagram"
+      >
+        <img
+          src="https://picsum.photos/200/200"
+          alt="Objetivo 2"
+          class="objective-image"
+        />
+      </a>
+      <a
+        href="https://www.instagram.com/p/ejemplo3"
+        class="objective-card"
+        target="_blank"
+        aria-label="Ver publicación en Instagram"
+      >
+        <img
+          src="https://picsum.photos/200/200"
+          alt="Objetivo 3"
+          class="objective-image"
+        />
+      </a>
     </div>
-    <div class="benefits">
-        <div class="benefit">
-            <div class="icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
-                    <line x1="12" y1="18" x2="12" y2="18"></line>
-                </svg>
-            </div>
-            <div class="text">
-                <h3>Accesible</h3>
-                <p>Sólo necesitas estar en un lugar privado en el que te sientas cómodo.</p>
-            </div>
-        </div>
-        <div class="benefit">
-            <div class="icon-benefit">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-                    <line x1="16" y1="2" x2="16" y2="6"></line>
-                    <line x1="8" y1="2" x2="8" y2="6"></line>
-                    <line x1="3" y1="10" x2="21" y2="10"></line>
-                </svg>
-            </div>
-            <div class="text">
-                <h3>Flexible</h3>
-                <p>Se adapta a tus días y horarios disponibles.</p>
-            </div>
-        </div>
-        <div class="benefit">
-            <div class="icon-benefit">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
-                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
-                </svg>
-            </div>
-            <div class="text">
-                <h3>Segura</h3>
-                <p>Con alto nivel de confidencialidad resguardando tu información.</p>
-            </div>
-        </div>
-        <div class="benefit">
-            <div class="icon-benefit">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                    <circle cx="12" cy="7" r="4"></circle>
-                </svg>
-            </div>
-            <div class="text">
-                <h3>Continua</h3>
-                <p>Aunque viajes o te muevas de lugar, podrás tener un continuo seguimiento en tu terapia.</p>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="container-atention">
-  <h2>ÁREAS DE ATENCIÓN</h2>
-  <div class="areas">
-      <div class="area">
-          <div class="icon">☁</div>
-          <h2>ESTRÉS Y ANSIEDAD</h2>
-      </div>
-      <div class="area">
-          <div class="icon">💔</div>
-          <h2>RUPTURAS AMOROSAS Y DUELOS AFECTIVOS</h2>
-      </div>
-      <div class="area">
-          <div class="icon">🧍</div>
-          <h2>SÍNTOMAS DE DEPRESIÓN</h2>
-      </div>
-      <div class="area">
-          <div class="icon">❤🧶</div>
-          <h2>AUTOESTIMA Y AUTOCONOCIMIENTO</h2>
-      </div>
-      <div class="area">
-          <div class="icon">📝</div>
-          <h2>TOMA DE DECISIONES</h2>
-      </div>
-      <div class="area">
-          <div class="icon">📊</div>
-          <h2>CRECIMIENTO Y DESARROLLO PERSONAL</h2>
-      </div>
   </div>
-</div>
-    </section>
+</section>
 
-`
-}) %> <!-- Incluye el layout común -->
+<!-- Sección 4: Beneficios -->
+<section class="benefits-section">
+  <div class="benefits-container">
+    <div class="clip-decoration vertical-clips">
+      <img src="./img/clip_2.png" class="clip-left" alt="Pinza izquierda" />
+      <img src="./img/clip_2.png" class="clip-right" alt="Pinza derecha" />
+    </div>
+    <h2 class="section-title">Beneficios de la Terapia Online</h2>
+    <div class="benefits-grid">
+      <div class="benefit-card">
+        <div class="benefit-content">
+          <div class="benefit-icon">🏠</div>
+          <h3>Confort en tu entorno</h3>
+        </div>
+      </div>
+
+      <div class="benefit-card">
+        <div class="benefit-content">
+          <div class="benefit-icon">🕛</div>
+          <h3>Flexibilidad horaria</h3>
+        </div>
+      </div>
+
+      <div class="benefit-card">
+        <div class="benefit-content">
+          <div class="benefit-icon">💸</div>
+          <h3>Ahorro en tiempo y costes</h3>
+        </div>
+      </div>
+
+      <div class="benefit-card">
+        <div class="benefit-content">
+          <div class="benefit-icon">🙆</div>
+          <h3>Resultados efectivos garantizados</h3>
+        </div>
+      </div>
+      <!-- Repetir para otros 3 beneficios -->
+    </div>
+  </div>
+</section>
+
+<!-- Sección 5: Áreas de Atención -->
+<section class="areas-section">
+  <h2 class="section-title">Áreas de Atención</h2>
+  <div class="areas-grid">
+    <!-- Ansiedad -->
+    <div class="area-card">
+      <div class="area-icon">🌪️</div>
+      <h3>Manejo de Ansiedad</h3>
+      <p>
+        Técnicas comprobadas para controlar síntomas y recuperar tu tranquilidad
+      </p>
+    </div>
+
+    <!-- Depresión -->
+    <div class="area-card">
+      <div class="area-icon">🕳️</div>
+      <h3>Superación de Depresión</h3>
+      <p>Estrategias para recuperar el equilibrio emocional y vitalidad</p>
+    </div>
+
+    <!-- Estrés -->
+    <div class="area-card">
+      <div class="area-icon">⚡</div>
+      <h3>Control de Estrés</h3>
+      <p>Herramientas prácticas para manejo de situaciones estresantes</p>
+    </div>
+
+    <!-- Autoestima -->
+    <div class="area-card">
+      <div class="area-icon">💖</div>
+      <h3>Fortalecimiento de Autoestima</h3>
+      <p>Reconexión con tu valor personal y cualidades únicas</p>
+    </div>
+
+    <!-- Relaciones -->
+    <div class="area-card">
+      <div class="area-icon">🤝</div>
+      <h3>Relaciones Interpersonales</h3>
+      <p>Mejora tus habilidades sociales y dinámicas de pareja</p>
+    </div>
+
+    <!-- Duelo -->
+    <div class="area-card">
+      <div class="area-icon">🕯️</div>
+      <h3>Procesos de Duelo</h3>
+      <p>Acompañamiento en pérdidas y transiciones difíciles</p>
+    </div>
+
+    <!-- Trauma -->
+    <div class="area-card">
+      <div class="area-icon">🎭</div>
+      <h3>Superación de Trauma</h3>
+      <p>Proceso seguro para sanar experiencias dolorosas</p>
+    </div>
+
+    <!-- Crecimiento -->
+    <div class="area-card">
+      <div class="area-icon">🌱</div>
+      <h3>Desarrollo Personal</h3>
+      <p>Potenciación de habilidades y autoconocimiento</p>
+    </div>
+
+    <!-- Sueño -->
+    <div class="area-card">
+      <div class="area-icon">💤</div>
+      <h3>Problemas de Sueño</h3>
+      <p>Técnicas para mejorar calidad y hábitos de descanso</p>
+    </div>
+  </div>
+</section>
+` }) %>
