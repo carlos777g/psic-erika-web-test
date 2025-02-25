@@ -1,0 +1,447 @@
+
+/* ====== Sección de presentación (Mensaje cálido) ====== */
+#about-presentation {
+    position: relative;
+    padding: 4rem 0; /* Espaciado superior e inferior */
+    text-align: center;
+  }
+  
+  /* Imagen de la psicóloga */
+  .image-container {
+    position: relative;
+    margin-bottom: -100px; /* Hace que la imagen se superponga sobre el cuadro rosado */
+  }
+  
+  .main-image {
+    width: 230px;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 50%; /* Redondear la imagen */
+    box-shadow: var(--shadow);
+    z-index: 2; /* Coloca la imagen sobre otros elementos */
+    position: relative;
+  }
+  
+  /* Cuadro rosado */
+  .presentation-box {
+    background-color: var(--primary-color);
+    width: 80%;
+    max-width: 300rem; /* Ancho del cuadro */
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    
+    border-radius: 10px;
+    position: relative;
+    box-shadow: var(--shadow);
+    z-index: 1;
+  }
+  
+  /* Cintas decorativas en el cuadro */
+  .box-tape {
+    position: absolute;
+    width: 100px;
+    height: auto;
+    max-height: 50px;
+    object-fit: contain;
+    z-index: 3;
+  }
+  
+  .box-tape.tape-left {
+    top: -5px;
+    left: -25px;
+    transform: rotate(-20deg); /* Ángulo decorativo */
+  }
+  
+  .box-tape.tape-right {
+    top: -5px;
+    right: -25px;
+    transform: rotate(20deg); /* Ángulo decorativo */
+  }
+  
+  /* Texto dentro del cuadro */
+  .presentation-text {
+    text-align: center;
+    margin-top: 4rem; /* Deja espacio para la imagen */
+    
+  }
+  
+  .presentation-text h1 {
+    font-size: 2.5rem;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
+  
+  .presentation-text p {
+    line-height: 1.8;
+    color: #4a4a4a;
+  }
+  
+
+/* ====== Certificaciones =================================== */
+#about-certifications {
+  width: 90%;
+  max-width: 1200px;
+  text-align: center;
+  padding: 4rem 2rem;
+  margin: 0 auto;
+  background-color: var(--certification-box);
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+}
+
+/* Título llamativo */
+.certifications-title {
+  font-size: 2.5rem;
+  color: var(--text-color);
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: relative;
+}
+
+/* Animación decorativa del título */
+.certifications-title::after {
+  content: '';
+  display: block;
+  width: 300px;
+  height: 4px;
+  background-color: var(--tertiary-color);
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+/* Contenedor de certificaciones */
+.certifications-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Estilos para cada certificación */
+.certification-box {
+  background-color: var(--primary-color);
+  padding: 1.5rem;
+  width: 80%;
+  max-width: 500px;
+  border-radius: 10px;
+  color: var(--text-color);
+  font-size: 1.2rem;
+  text-align: left;
+  box-shadow: var(--shadow);
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Alternar las posiciones */
+.certification-box.left {
+  align-self: flex-start;
+  margin-left: 10%;
+}
+
+.certification-box.right {
+  align-self: flex-end;
+  margin-right: 10%;
+}
+
+/* Pequeña animación en hover */
+.certification-box:hover {
+  transform: scale(1.05);
+}
+
+/* Imagen del certificado */
+.certificate-image {
+  margin-top: 3rem;
+}
+
+.certificate-image img {
+  width: 100%;
+  max-width: 1000px;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+}
+
+/* Certificados clickeables */
+.certification-box {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.certification-box:hover {
+  transform: scale(1.02) translateY(-5px);
+  box-shadow: var(--shadow)
+}
+
+.certification-content {
+  padding: 1.5rem;
+}
+
+.certification-content h3 {
+  color: var(--text-color);
+  margin-bottom: 0.8rem;
+}
+
+/* Sección adicional */
+.additional-info-container {
+  display: flex;
+  gap: 2rem;
+  margin-top: 3rem;
+  justify-content: center;
+}
+
+.info-box {
+  flex: 1;
+  max-width: 400px;
+  background: var(--primary-color);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: var(--shadow);
+}
+
+.info-box h3 {
+  margin-bottom: 1.2rem;
+  color: var(--text-color);
+}
+
+.info-box ul {
+  list-style-type: circle;
+  padding-left: 0;
+  justify-items: left;
+}
+
+
+
+/* ====== Redes sociales y botón para agendar citas =========================== */
+#about-contact {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+/* Título grande y llamativo */
+.contact-title {
+  font-size: 3rem;
+  color: var(--text-color);
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: relative;
+}
+
+/* Línea decorativa bajo el título */
+.contact-title::after {
+  content: '';
+  display: block;
+  width: 120px;
+  height: 5px;
+  background-color: var(--tertiary-color);
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+/* Contenedor de redes sociales */
+.social-media-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Caja de cada red social */
+.social-box {
+  display: block;
+  background-color: var(--primary-color);
+  padding: 1rem;
+  width: 80%;
+  max-width: 500px;
+  border-radius: 10px;
+  color: var(--text-color);
+  font-size: 1.5rem;
+  text-align: center;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+.social-box img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+}
+
+.social-box p {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+/* Alternar posiciones */
+.social-box.left {
+  align-self: flex-start;
+  margin-left: 10%;
+}
+
+.social-box.right {
+  align-self: flex-end;
+  margin-right: 10%;
+}
+
+/* Efecto hover */
+.social-box:hover {
+  transform: scale(1.05);
+}
+
+/* Botón de WhatsApp */
+/* Contenedor del botón de WhatsApp */
+.whatsapp-container {
+  margin-top: 3rem;
+}
+
+/* Botón de WhatsApp */
+.btn-whatsapp {
+  display: inline-flex;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #25D366;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+  gap: 10px;
+}
+
+/* Icono de WhatsApp dentro del botón */
+.btn-whatsapp img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Efecto hover */
+.btn-whatsapp:hover {
+  background-color: #1EBE5D;
+}
+  
+  /* ====== Historia personal ====== */
+  .about-story {
+    margin: 2rem 0;
+    text-align: center;
+  }
+  
+  .about-story h2 {
+    font-size: 2rem;
+    color: var(--text-color)  ;
+    margin-bottom: 1rem;
+  }
+  
+  .about-story p {
+    margin: 1rem auto;
+    max-width: 800px;
+    line-height: 1.8;
+    background-color: var(--fourth-color);
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    font-size: 1rem;
+    color: var(--text-color);
+  }
+  
+  /* ====== Media queries ====== */
+  @media (max-width: 768px) {
+    #about-presentation { 
+      .main-image {
+      width: 150px;
+      height: 150px;
+    }
+  
+    .presentation-box {
+      padding: 3rem 1rem;
+    }
+  
+    .presentation-text h1 {
+      font-size: 1.8rem;
+    }
+  
+    .presentation-text p {
+      font-size: 1rem;
+    } }
+
+
+    #about-certifications { 
+      .certifications-title {
+        font-size: 2rem;
+      }
+    
+      .certification-box {
+        width: 90%;
+        text-align: center;
+      }
+    
+      .certification-box.left,
+      .certification-box.right {
+        align-self: center;
+        margin-left: 0;
+        margin-right: 0;
+      }
+     }
+
+    .additional-info-container {
+      flex-direction: column;
+    }
+    
+    .info-box {
+        max-width: 100%;
+    }
+
+
+    #about-contact { 
+      .contact-title {
+        font-size: 2.5rem;
+      }
+    
+      .social-box {
+        width: 90%;
+      }
+    
+      .social-box.left,
+      .social-box.right {
+        align-self: center;
+        margin-left: 0;
+        margin-right: 0;
+      }
+     }
+
+
+    .about-story { 
+      .about-header h1 {
+        font-size: 2rem;
+      }
+    
+      .about-message {
+        font-size: 1rem;
+        padding: 1rem;
+      }
+    
+      .social-icons {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+      }
+    
+      .btn-appointment {
+        font-size: 0.9rem;
+        padding: 0.6rem 1rem;
+      }
+    
+      .about-story p {
+        padding: 0.8rem 1rem;
+        font-size: 0.9rem;
+      }
+     }
+  }

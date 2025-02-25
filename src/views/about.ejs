@@ -1,0 +1,169 @@
+<%- include('partials/layout', { 
+   
+    body: `
+      <!-- Sección 1: Presentación -->
+      <section id="about-presentation" class="about-section">
+        <!-- Imagen de la psicóloga -->
+        <div class="image-container">
+          <img src="https://picsum.photos/200/200" alt="Psicóloga Erika" class="main-image">
+        </div>
+      
+        <!-- Cuadro rosado con texto -->
+        <div class="presentation-box">
+          <!-- Cintas decorativas en las esquinas del cuadro -->
+          <img src="./img/tape.png" alt="Cinta izquierda" class="box-tape tape-left">
+          <img src="./img/tape.png" alt="Cinta derecha" class="box-tape tape-right">
+          <div class="presentation-text">
+            <h1>Hola, soy Erika</h1>
+            <p>
+              Mi misión es acompañarte en tu proceso de bienestar emocional. Estoy aquí para ofrecerte un espacio seguro y confidencial donde puedas explorar tus emociones, resolver tus inquietudes y avanzar hacia una vida más plena.
+            </p>
+          </div>   
+        </div>
+      </section>
+      
+  
+      <!-- Sección 2: Estudios y certificaciones -->
+      <section id="about-certifications" class="about-section">
+        <h2 class="certifications-title">Mis estudios y certificaciones</h2>
+        
+        <div class="certifications-container">
+
+
+                  <!-- Certificados como enlaces -->
+        <a href="/psiconfort#cognitivo-conductual" class="certification-box left">
+          <div class="certification-content">
+              <h3>Maestría en Psicoterapia Cognitivo-Conductual</h3>
+              <p>Formación avanzada en técnicas basadas en evidencia científica para el tratamiento de trastornos emocionales</p>
+          </div>
+      </a>
+
+      <a href="/psiconfort#contextuales" class="certification-box right">
+          <div class="certification-content">
+              <h3>Especialista en Terapias Contextuales</h3>
+              <p>Enfoque en Terapia de Aceptación y Compromiso (ACT) para manejo de estrés y desarrollo personal</p>
+          </div>
+      </a>
+
+      <a href="/psiconfort#esquemas" class="certification-box left">
+          <div class="certification-content">
+              <h3>Diplomado en Terapia de Esquemas</h3>
+              <p>Especialización en patrones emocionales profundos y su transformación a largo plazo</p>
+          </div>
+      </a>
+
+      <a href="/psiconfort#infantil" class="certification-box right">
+          <div class="certification-content">
+              <h3>Especialidad en Psicología Infantil</h3>
+              <p>Técnicas adaptadas para el trabajo con niños y adolescentes en entornos clínicos y educativos</p>
+          </div>
+      </a>
+
+      <a href="/psiconfort#salud-mental" class="certification-box left">
+          <div class="certification-content">
+              <h3>Experto en Salud Mental Integral</h3>
+              <p>Abordaje multidisciplinario de trastornos de ansiedad, depresión y manejo emocional</p>
+          </div>
+      </a>
+
+      <a href="/psiconfort#base" class="certification-box right">
+          <div class="certification-content">
+              <h3>Licenciatura en Psicología</h3>
+              <p>Formación universitaria con mención honorífica en la Universidad Nacional Autónoma de México</p>
+          </div>
+      </a>
+
+
+        </div>
+
+            <!-- Sección adicional de Experiencia y Cursos -->
+    <div class="additional-info-container">
+      <div class="info-box experience-box">
+          <h3>📚 Experiencia</h3>
+          <ul>
+              <li>Trastornos de personalidad</li>
+              <li>Ansiedad, depresión</li>
+              <li>Ideas y conductas suicidas</li>
+              <li>Trastosnos Alimenticios</li>
+              <li>Trastornos del sueño</li>
+              <li>Modificación conductual</li>
+              <li>Terapia de pareja</li>
+              <li>Regulación emocional</li>
+              <li>Mindfulness</li>
+              <li>Duelos</li>
+          </ul>
+      </div>
+
+      <div class="info-box courses-box">
+          <h3>🎓 Educación Continua</h3>
+          <ul>
+            <li>Mindfulness regularización 
+              emocional con herramientas DBT</li>
+              <li>Activación conductual en el 
+                tratamiento de la depresión</li>
+              <li>Técnicas para la reestructuración
+                cognitiva
+              </li>
+              <li>Violencia intrafamiliar en el marco del COVID-19</li>
+              <li>Conductas asociadas al suicidio</li>
+          </ul>
+      </div>
+  </div>
+
+          <!-- Imagen del certificado oficial -->
+          <div class="certificate-image">
+            <img src="https://picsum.photos/500/300" alt="Certificado Oficial">
+          </div>
+      </section>
+      
+  
+      <!-- Sección 3: Contáctame y agendar cita -->
+      <section id="about-contact" class="about-section">
+        <h2 class="contact-title">Contáctame</h2>
+      
+        <div class="social-media-container">
+          <!-- Instagram -->
+          <a href="https://www.instagram.com/psicerika" target="_blank" class="social-box left">
+            <img src="https://picsum.photos/300/200" alt="Post de Instagram">
+            <p>Instagram</p>
+          </a>
+      
+          <!-- Facebook -->
+          <a href="https://www.facebook.com/psicerika" target="_blank" class="social-box right">
+            <img src="https://picsum.photos/300/200" alt="Post de Facebook">
+            <p>Facebook</p>
+          </a>
+      
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/in/psicerika" target="_blank" class="social-box left">
+            <img src="https://picsum.photos/300/200" alt="Post de LinkedIn">
+            <p>LinkedIn</p>
+          </a>
+        </div>
+      
+        <!-- Botón de agendar cita por WhatsApp -->
+        <div class="whatsapp-container">
+          <a href="https://wa.me/525583812546?text=Hola,%20quisiera%20agendar%20una%20cita%20contigo." 
+            target="_blank" class="btn-whatsapp">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Icono">
+            Agendar Cita por WhatsApp
+          </a>
+        </div>
+      </section>
+      
+  
+      <!-- Sección 4: Mi historia -->
+      <section id="about-story" class="about-section">
+        <div class="about-story">
+          <h2>Mi historia</h2>
+          <p>
+            Desde muy joven, supe que quería ayudar a las personas a superar sus desafíos emocionales y construir una vida más feliz. Comencé mi carrera como psicóloga motivada por mi pasión por entender la mente humana y la necesidad de brindar apoyo a quienes lo necesitan.
+          </p>
+          <p>
+            A lo largo de los años, he tenido el privilegio de trabajar con personas de diferentes edades y contextos, aprendiendo que cada camino es único y especial. Mi enfoque combina técnicas científicas con un trato cálido y humano, siempre adaptándome a las necesidades de cada persona.
+          </p>
+        </div>
+      </section>
+    `
+    }) %>
+  

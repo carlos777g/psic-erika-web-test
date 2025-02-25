@@ -1,0 +1,96 @@
+/* main.css */
+:root {
+  --back-color: #F0D8C3;
+  --text-color: #333;
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /*font-family*/
+  --font-kaushan: 'Kaushan Script', cursive;
+  --font-arial: Arial, sans-serif;
+  /* Colores */
+  /* página about: */
+  --primary-color: #f5bfb8;
+  --secondary-color: #ff6e618a;
+  --tertiary-color: #ff6f61;
+  --fourth-color: #ffe6e6;
+  --certification-box: #ff6e618a;
+  /* página terapia_online: */
+  --title-color: #ebbcbc;
+}
+/* ====== Reset o estilos globales ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-kaushan);
+  background-color: var(--back-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-family: var(--font-arial);
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+  font-family: var(--font-arial);
+  font-weight: bold;
+}
+
+ul {
+  font-family: var(--font-arial);
+  font-weight: none;
+  font-size: 1.1rem;
+}
+/* Navbar - Efectos hover */
+.navbar-nav .nav-link:hover {
+  color: white !important;
+}
+
+.navbar-brand:hover {
+  color: white !important;
+}
+
+/* Footer */
+footer {
+  background-color: #4a4a4a;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px 0;
+  font-family: Arial, sans-serif; /* Redundante, pero no hace daño */
+  margin-top: 4rem;
+  box-shadow: var(--shadow);
+}
+
+footer p {
+  font-size: 14px;
+}
+
+.social-icons {
+  margin-bottom: 15px;
+}
+
+.social-icons a {
+  color: #ffffff;
+  font-size: 24px;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
